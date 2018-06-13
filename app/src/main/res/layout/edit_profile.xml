@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eUsername"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eName"
+        android:layout_below="@+id/eUsername"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eEmail"
+        android:layout_below="@+id/eName"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdoeGender"
+        android:layout_below="@id/eEmail"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:id="@+id/rdoeMale"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:id="@+id/rdoeFemale"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eJoinDate"
+        android:layout_below="@+id/rdoeGender"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eDOB"
+        android:layout_below="@+id/eJoinDate"/>
+
+    <Button
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:layout_below="@+id/eDOB"
+        android:layout_centerHorizontal="true"
+        android:text="@string/change"
+        android:onClick="updateDetail"
+        android:id="@+id/btnChange"/>
+
+    <Button
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:layout_below="@+id/btnChange"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Delete"
+        android:onClick="deteleDetail"
+        android:id="@+id/btnDelete" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:textAlignment="center"
+        android:id="@+id/addUsername"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:layout_below="@id/addUsername"
+        android:textAlignment="center"
+        android:id="@+id/addName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_below="@id/addName"
+        android:textAlignment="center"
+        android:id="@+id/addEmail"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdoGender"
+        android:layout_below="@id/addEmail"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:id="@+id/rdoMale"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:id="@+id/rdoFemale"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/join_date"
+        android:layout_below="@id/rdoGender"
+        android:textAlignment="center"
+        android:id="@+id/joinDate"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/date_of_birth"
+        android:layout_below="@id/joinDate"
+        android:textAlignment="center"
+        android:id="@+id/dateOfBirth"
+        />
+
+    <Button
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:layout_below="@+id/dateOfBirth"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add"
+        android:onClick="saveUser"
+        />
+
+
+</RelativeLayout>
